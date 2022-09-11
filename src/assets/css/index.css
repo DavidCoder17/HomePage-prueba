@@ -1,0 +1,61 @@
+@font-face {
+  font-family: 'Apercu';
+  src: url('../fonts/Apercu.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+:root {
+  font-family: 'Apercu';
+  font-size: 16px;
+
+  --sandColor: #cfe062;
+  --sandFont: #6f7e0d;
+  --whiteColor: #fff;
+  --orangeColor: #d96321;
+  --orangeHoverColor: #b9561d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+#root {
+  overflow: hidden;
+}
+
+/* Components */
+
+.btnPrimary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 272px;
+  height: 54px;
+
+  border-radius: 54px;
+  font-size: .9375rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 150ms all;
+
+  color: var(--whiteColor);
+  background: var(--orangeColor);
+}
+
+.btnPrimary:hover {
+  background: var(--orangeHoverColor);
+}
+
+@media only screen and (max-width: 790px) {
+  
+  :root {
+    font-size: 14px;
+  }
+
+}
